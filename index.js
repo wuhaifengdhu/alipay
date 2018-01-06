@@ -21,10 +21,8 @@ app.get('/me',function(req,res){
 
 app.get('/red/:userid',function(req,res){
     new_url = "https://qr.alipay.com/" + req.params.userid;
-    // var text = ejs.render("template", {new_url : new_url});
-    // console.log('template page is  ' + new_url);
-    // console.log(text);
-    res.redirect(new_url);
+    res.render("template", {new_url : new_url});
+    console.log('redirect new url is  ' + new_url);
 });
 
 app.get('/wuya',function(req,res){
