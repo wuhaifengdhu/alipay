@@ -25,10 +25,11 @@ app.get('/red/:userid',function(req,res){
     // console.log('template page is  ' + new_url);
     // console.log(text);
     res.redirect(new_url);
+});
 
 app.get('/wuya',function(req,res){
     res.sendfile('wuya.html') ;
     console.log('wuya page is required ');
 });
 
-var server=app.listen(80) ;
+var server=app.listen(80); 
